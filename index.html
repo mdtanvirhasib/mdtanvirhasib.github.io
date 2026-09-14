@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Tanvir Hasib Fahim | CSE Student &amp; Software Developer</title>
+
+  <meta name="description" content="Portfolio of Md. Tanvir Hasib Fahim, a Computer Science student focused on Software Engineering, Full-Stack Development, .NET, C#, Java, PHP, and SQL." />
+  <meta name="keywords" content="Tanvir Hasib Fahim, Software Engineer, Full Stack Developer, CSE Student, AIUB, .NET, C#, Java, PHP, SQL, Portfolio" />
+  <meta name="author" content="Md. Tanvir Hasib Fahim" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Md. Tanvir Hasib Fahim | CSE Student & Software Developer" />
+  <meta property="og:description" content="Final-year CSE student focused on Software Engineering and Full-Stack Development. Explore projects built with .NET, C#, Java, PHP, and SQL." />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo">MD. TANVIR HASIB FAHIM</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">MD. TANVIR HASIB FAHIM</h1>
+          <p class="hero-subtitle">Computer Science Student | Software Engineer | Full-Stack Developer</p>
+          <p class="hero-desc">
+            Final-year CSE student focused on Software Engineering and Full-Stack Development.
+            Hands-on experience building secure web and desktop management systems using
+            .NET, C#, Java, PHP, and SQL.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Md. Tanvir Hasib Fahim" class="profile-img" onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="fallback-initials" aria-hidden="true">TF</div>
+          </div>
+
+          <span class="skill-badge badge-1">C#</span>
+          <span class="skill-badge badge-2">.NET</span>
+          <span class="skill-badge badge-3">Java</span>
+          <span class="skill-badge badge-4">PHP</span>
+          <span class="skill-badge badge-5">SQL</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A quick look at who I am and where I'm headed.</p>
+
+        <div class="about-grid">
+          <div class="neu-card about-card reveal">
+            <i class="fa-solid fa-user icon-accent" aria-hidden="true"></i>
+            <h3>Who I Am</h3>
+            <p>Md. Tanvir Hasib Fahim, a final-year Computer Science student based in Feni, Bangladesh.</p>
+          </div>
+
+          <div class="neu-card about-card reveal">
+            <i class="fa-solid fa-graduation-cap icon-accent" aria-hidden="true"></i>
+            <h3>University</h3>
+            <p>American International University-Bangladesh (AIUB) &mdash; BSc in Computer Science, CGPA 3.46/4.00.</p>
+          </div>
+
+          <div class="neu-card about-card reveal">
+            <i class="fa-solid fa-calendar-check icon-accent" aria-hidden="true"></i>
+            <h3>Graduation</h3>
+            <p>Expected to graduate in December 2026, ready to take on entry-level engineering roles.</p>
+          </div>
+
+          <div class="neu-card about-card reveal">
+            <i class="fa-solid fa-bullseye icon-accent" aria-hidden="true"></i>
+            <h3>Career Objective</h3>
+            <p>Seeking an entry-level Software Engineer or Web Developer role where I can apply my programming, database, software engineering, and full-stack development skills to build practical and scalable software solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION SECTION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="section-container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic journey so far.</p>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="neu-card timeline-card">
+              <span class="timeline-date">Expected December 2026</span>
+              <h3>American International University-Bangladesh</h3>
+              <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+              <p>Bachelor of Science (BSc) in Computer Science</p>
+              <span class="pill pill-accent">CGPA: 3.46 / 4.00</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+            <div class="neu-card timeline-card">
+              <span class="timeline-date">Graduated 2021</span>
+              <h3>Feni Government College</h3>
+              <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Feni, Bangladesh</p>
+              <p>Higher Secondary Certificate (HSC) &ndash; Science</p>
+              <span class="pill pill-accent">GPA: 4.92 / 5.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="section" id="skills">
+      <div class="section-container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Languages, tools, and concepts I work with.</p>
+
+        <div class="skills-grid">
+          <div class="neu-card skill-card reveal">
+            <div class="skill-card-head"><i class="fa-solid fa-code"></i><h3>Programming Languages</h3></div>
+            <div class="pill-group">
+              <span class="pill">C++</span><span class="pill">Java</span><span class="pill">C#</span>
+              <span class="pill">PHP</span><span class="pill">JavaScript</span><span class="pill">Python</span><span class="pill">R</span>
+            </div>
+          </div>
+
+          <div class="neu-card skill-card reveal">
+            <div class="skill-card-head"><i class="fa-solid fa-globe"></i><h3>Full-Stack Development</h3></div>
+            <div class="pill-group">
+              <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">PHP</span><span class="pill">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="neu-card skill-card reveal">
+            <div class="skill-card-head"><i class="fa-solid fa-database"></i><h3>Database</h3></div>
+            <div class="pill-group">
+              <span class="pill">MySQL</span><span class="pill">Oracle SQL</span>
+            </div>
+          </div>
+
+          <div class="neu-card skill-card reveal">
+            <div class="skill-card-head"><i class="fa-solid fa-layer-group"></i><h3>Frameworks &amp; Libraries</h3></div>
+            <div class="pill-group">
+              <span class="pill">.NET</span><span class="pill">OpenGL (GLUT)</span><span class="pill">Java GUI</span>
+            </div>
+          </div>
+
+          <div class="neu-card skill-card reveal">
+            <div class="skill-card-head"><i class="fa-solid fa-toolbox"></i><h3>Tools</h3></div>
+            <div class="pill-group">
+              <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span>
+            </div>
+          </div>
+
+          <div class="neu-card skill-card reveal">
+            <div class="skill-card-head"><i class="fa-solid fa-lightbulb"></i><h3>Core Concepts</h3></div>
+            <div class="pill-group">
+              <span class="pill">OOP</span><span class="pill">DBMS</span><span class="pill">DSA</span>
+              <span class="pill">Data Science</span><span class="pill">MVC Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="section-container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A selection of systems I've designed and built.</p>
+
+        <div class="projects-grid">
+
+          <article class="neu-card project-card reveal">
+          <!--  <div class="project-img" style="background-image:url('assets/project/research-assistant.jpg')">
+              <div class="project-img-fallback"><i class="fa-solid fa-user-tie"></i></div>
+            </div>-->
+            <div class="project-body">
+              <h3>Research Assistant Portal</h3>
+              <div class="pill-group small">
+                <span class="pill">C#</span><span class="pill">.NET</span><span class="pill">Oracle SQL</span><span class="pill">CRUD Architecture</span>
+              </div>
+              <p>Built a role-based portal for research job postings and applications. Implemented database connectivity and CRUD operations.</p>
+              <a href="https://github.com/mdtanvirhasib/Research_Assistant_Portal" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="View Research Assistant Portal on GitHub">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="neu-card project-card reveal">
+            <!--<div class="project-img" style="background-image:url('assets/project/food-ordering.jpg')">
+              <div class="project-img-fallback"><i class="fa-solid fa-utensils"></i></div>
+            </div>-->
+            <div class="project-body">
+              <h3>Online Food Ordering Platform</h3>
+              <div class="pill-group small">
+                <span class="pill">PHP</span><span class="pill">MySQL</span><span class="pill">JavaScript</span><span class="pill">HTML5</span><span class="pill">CSS3</span>
+              </div>
+              <p>Developed a full-stack web platform for food ordering, tracking, and management. Designed a responsive UI, integrated backend database functionality, and implemented user dashboard and admin control.</p>
+              <a href="https://github.com/mdtanvirhasib/Online-Food-Ordering-Platform" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="View Online Food Ordering Platform on GitHub">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="neu-card project-card reveal">
+           <!-- <div class="project-img" style="background-image:url('assets/project/bookstore.jpg')">
+              <div class="project-img-fallback"><i class="fa-solid fa-book"></i></div>
+            </div>-->
+            <div class="project-body">
+              <h3>Book Store Management System</h3>
+              <div class="pill-group small">
+                <span class="pill">Java</span><span class="pill">Oracle SQL</span>
+              </div>
+              <p>Designed and developed a desktop-based management system with item tracking, user management, and purchase modules. Applied Object-Oriented Programming principles.</p>
+              <a href="https://github.com/mdtanvirhasib/Book-Store-Management-System" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="View Book Store Management System on GitHub">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="neu-card project-card reveal">
+            <!--<div class="project-img" style="background-image:url('assets/project/transportation.jpg')">
+              <div class="project-img-fallback"><i class="fa-solid fa-cube"></i></div>
+            </div>-->
+            <div class="project-body">
+              <h3>3D Transportation Animation Project</h3>
+              <div class="pill-group small">
+                <span class="pill">C++</span><span class="pill">OpenGL (GLUT)</span>
+              </div>
+              <p>Developed a multi-scene 3D simulation of transit networks with moving vehicles, environmental assets, and dynamic day/night cycles. Integrated keyboard and mouse controls for real-time camera switching, scene navigation, and animation handling.</p>
+              <a href="https://github.com/mdtanvirhasib/3D-Transportation-Animation-Project" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="View 3D Transportation Animation Project on GitHub">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT I DO SECTION ============ -->
+    <section class="section" id="focus">
+      <div class="section-container">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Where my skills and interests overlap.</p>
+
+        <div class="focus-grid">
+          <div class="neu-card focus-card reveal">
+            <i class="fa-solid fa-diagram-project icon-accent" aria-hidden="true"></i>
+            <h3>Software Engineering</h3>
+            <p>Designing structured, maintainable systems using OOP principles and solid data structures.</p>
+          </div>
+          <div class="neu-card focus-card reveal">
+            <i class="fa-solid fa-laptop-code icon-accent" aria-hidden="true"></i>
+            <h3>Full-Stack Web Development</h3>
+            <p>Building responsive front-ends and connecting them to reliable backend logic and databases.</p>
+          </div>
+          <div class="neu-card focus-card reveal">
+            <i class="fa-solid fa-database icon-accent" aria-hidden="true"></i>
+            <h3>Database Development</h3>
+            <p>Modeling schemas and writing efficient queries with MySQL and Oracle SQL.</p>
+          </div>
+          <div class="neu-card focus-card reveal">
+            <i class="fa-solid fa-desktop icon-accent" aria-hidden="true"></i>
+            <h3>Desktop Application Development</h3>
+            <p>Creating management systems in Java and C# with clean, usable interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="section-container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Let's talk about opportunities or ideas.</p>
+
+        <div class="contact-grid">
+          <div class="neu-card contact-info-card reveal">
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:md.tanvirhasib11@gmail.com">md.tanvirhasib11@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+8801742084795">+880 1742 084795</a>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span>243/02, Hazari Road, Mohipal, Feni-3900, Bangladesh</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-buttons">
+              <a href="mailto:md.tanvirhasib11@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
+              <a href="https://www.linkedin.com/in/md-tanvir-hasib-fahim" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/mdtanvirhasib" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <form class="neu-card contact-form-card reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Md. Tanvir Hasib Fahim. All Rights Reserved.</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/mdtanvirhasib" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/md-tanvir-hasib-fahim" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <p class="footer-credit">Designed &amp; Developed by Md. Tanvir Hasib Fahim</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
