@@ -109,11 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, duration);
   }
 
-  /* ---------- 7. CONTACT FORM VALIDATION ---------- */
+  /* ---------- 7. CONTACT FORM: VALIDATION + REAL EMAIL DELIVERY ---------- */
   const contactForm = document.getElementById('contactForm');
   const nameInput = document.getElementById('name');
   const emailInput = document.getElementById('email');
   const messageInput = document.getElementById('message');
+  const submitBtn = document.getElementById('formSubmitBtn');
 
   const nameError = document.getElementById('nameError');
   const emailError = document.getElementById('emailError');
@@ -123,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
   }
 
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     let valid = true;
 
@@ -151,8 +152,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!valid) return;
 
-    showToast("Thanks! This form is front-end only for now — please reach me directly at md.tanvirhasib11@gmail.com.");
-    contactForm.reset();
+    // Honeypot check: if this hidden field has a value, silently drop the submission.
+    const honeypot = contactForm.querySelector('input[name="_honey"]');
+    if (honeypot && honeypot.value) {
+      contactForm.reset();
+      return;
+    }
+
+    const ajaxAction = contactForm.getAttribute('data-ajax-action');
+    const originalBtnText = submitBtn.textContent;
+
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch(ajaxAction, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(contactForm)
+      });
+
+      if (response.ok) {
+        showToast("Thanks! Your message has been sent — I'll get back to you soon.");
+        contactForm.reset();
+      } else {
+        showToast("Something went wrong sending your message. Please email me directly at md.tanvirhasib11@gmail.com.");
+      }
+    } catch (err) {
+      showToast("Network error. Please email me directly at md.tanvirhasib11@gmail.com.");
+    } finally {
+      submitBtn.textContent = originalBtnText;
+      submitBtn.disabled = false;
+    }
   });
 
 });

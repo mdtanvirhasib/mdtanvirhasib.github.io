@@ -222,9 +222,9 @@
         <div class="projects-grid">
 
           <article class="neu-card project-card reveal">
-          <!--  <div class="project-img" style="background-image:url('assets/project/research-assistant.jpg')">
+            <div class="project-img" style="background-image:url('assets/project/research-assistant.jpg')">
               <div class="project-img-fallback"><i class="fa-solid fa-user-tie"></i></div>
-            </div>-->
+            </div>
             <div class="project-body">
               <h3>Research Assistant Portal</h3>
               <div class="pill-group small">
@@ -238,9 +238,9 @@
           </article>
 
           <article class="neu-card project-card reveal">
-            <!--<div class="project-img" style="background-image:url('assets/project/food-ordering.jpg')">
+            <div class="project-img" style="background-image:url('assets/project/food-ordering.jpg')">
               <div class="project-img-fallback"><i class="fa-solid fa-utensils"></i></div>
-            </div>-->
+            </div>
             <div class="project-body">
               <h3>Online Food Ordering Platform</h3>
               <div class="pill-group small">
@@ -254,9 +254,9 @@
           </article>
 
           <article class="neu-card project-card reveal">
-           <!-- <div class="project-img" style="background-image:url('assets/project/bookstore.jpg')">
+            <div class="project-img" style="background-image:url('assets/project/bookstore.jpg')">
               <div class="project-img-fallback"><i class="fa-solid fa-book"></i></div>
-            </div>-->
+            </div>
             <div class="project-body">
               <h3>Book Store Management System</h3>
               <div class="pill-group small">
@@ -270,9 +270,9 @@
           </article>
 
           <article class="neu-card project-card reveal">
-            <!--<div class="project-img" style="background-image:url('assets/project/transportation.jpg')">
+            <div class="project-img" style="background-image:url('assets/project/transportation.jpg')">
               <div class="project-img-fallback"><i class="fa-solid fa-cube"></i></div>
-            </div>-->
+            </div>
             <div class="project-body">
               <h3>3D Transportation Animation Project</h3>
               <div class="pill-group small">
@@ -344,6 +344,13 @@
                 </div>
               </li>
               <li>
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <div>
+                  <span class="contact-label">WhatsApp</span>
+                  <a href="https://wa.me/8801742084795" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                </div>
+              </li>
+              <li>
                 <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                 <div>
                   <span class="contact-label">Location</span>
@@ -354,12 +361,26 @@
 
             <div class="contact-buttons">
               <a href="mailto:md.tanvirhasib11@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
+              <a href="https://wa.me/8801742084795" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
               <a href="https://www.linkedin.com/in/md-tanvir-hasib-fahim" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-              <a href="https://github.com/mdtanvirhasib" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
           </div>
 
-          <form class="neu-card contact-form-card reveal" id="contactForm" novalidate>
+          <form
+            class="neu-card contact-form-card reveal"
+            id="contactForm"
+            action="https://formsubmit.co/md.tanvirhasib11@gmail.com"
+            data-ajax-action="https://formsubmit.co/ajax/md.tanvirhasib11@gmail.com"
+            method="POST"
+            novalidate
+          >
+            <!-- FormSubmit configuration (no backend required) -->
+            <input type="hidden" name="_subject" value="New message from portfolio site" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- Honeypot field to reduce spam; kept hidden from real users -->
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -378,7 +399,7 @@
               <span class="form-error" id="messageError"></span>
             </div>
 
-            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">Send Message</button>
           </form>
         </div>
       </div>

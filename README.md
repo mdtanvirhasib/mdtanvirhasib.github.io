@@ -78,6 +78,30 @@ No build step is required.
      ```
    - If you named the repo `your-username.github.io`, it will be live at `https://<your-username>.github.io/`.
 
+## Contact Form — Real Email Delivery (No Backend)
+
+The contact form sends messages straight to your inbox using **[FormSubmit](https://formsubmit.co/)**, a free service built for exactly this: static sites with no server. There is nothing to install and no API key — it works out of the box on GitHub Pages.
+
+It's already wired up to `md.tanvirhasib11@gmail.com` in `index.html`. There's just **one required activation step**:
+
+1. Deploy the site (or just open `index.html` locally) and submit the contact form once with any test message.
+2. FormSubmit will send an **"Activate Form"** confirmation email to `md.tanvirhasib11@gmail.com`. Open that email and click the activation link.
+3. That's it — every submission after activation is delivered straight to that inbox. You only need to do this once per email address.
+
+**If you ever change the destination email:**
+Update the address in **two places** in `index.html`:
+```html
+<form
+  ...
+  action="https://formsubmit.co/YOUR-NEW-EMAIL@example.com"
+  data-ajax-action="https://formsubmit.co/ajax/YOUR-NEW-EMAIL@example.com"
+  ...
+>
+```
+Then repeat the one-time activation step above for the new address.
+
+**How it works technically:** `script.js` intercepts the form submission, validates the fields, then sends a `POST` request (via `fetch`, using `FormData`) to the FormSubmit AJAX endpoint. This keeps the visitor on the page and shows a success or error toast instead of redirecting them away. A hidden honeypot field (`_honey`) is included to quietly filter out basic spam bots. If JavaScript is disabled, the form still works via a normal HTML POST submission (FormSubmit will redirect to its own "thank you" page in that case).
+
 ## Replacing the Profile Image
 
 - Replace `assets/profile.jpg` with your own photo, keeping the same filename (or update the `src` in `index.html`'s hero section if you rename it).
